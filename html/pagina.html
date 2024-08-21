@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Productos LCC</title>
+</head>
+
+<style>
+    /* Estilo general para el cuerpo */
+    body {
+        background-color: #1e1e1e; /* Fondo gris oscuro */
+        color: #f0f0f0; /* Texto claro */
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Estilo para la tabla */
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: #2a2a2a; /* Fondo ligeramente más claro para la tabla */
+        border-radius: 15px; /* Bordes redondeados */
+        overflow: hidden; /* Para asegurar que los bordes redondeados funcionen */
+    }
+
+    /* Estilo para las celdas y encabezados de la tabla */
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #3a3a3a; /* Color de fondo para los encabezados */
+    }
+
+    td {
+        background-color: #2a2a2a; /* Color de fondo para las celdas */
+    }
+
+    /* Estilo para las imágenes */
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px; /* Bordes redondeados para las imágenes */
+        object-fit: cover;
+    }
+
+    /* Estilo para los enlaces */
+    a {
+        color: #66b2ff; /* Color azul claro para los enlaces */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #1e90ff; /* Color al pasar el mouse */
+    }
+
+    /* Estilo para la lista no ordenada */
+    ul {
+        list-style-type: none; /* Eliminar viñetas */
+        padding: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    /* Estilo para centrar el contenido */
+    .content-wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilo para los bordes redondeados en la tabla */
+    table, th, td {
+        border: 1px solid #444444;
+        border-radius: 10px;
+    }
+
+    h1{
+        position: absolute;
+        margin-bottom: 40%;
+    }
+</style>
+
+<body>
+
+    <!-- Menú de Productos -->
+    <h1>Catálogo de Productos en Venta</h1>
+    
+    <!-- Tabla para organizar los productos -->
+    <table border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Detalles</th>
+            <th>Enlace a Información</th>
+        </tr>
+        
+        <!-- Fila para el producto 1: Galletas -->
+        <tr>
+            <!-- Imagen del producto -->
+            <td><img src="imagenes/galletas.jpg" alt="Galletas de Chocolate" width="200" height="200"></td>
+            
+            <!-- Descripción del producto -->
+            <td>
+                <p>Deliciosas galletas de chocolate con trozos de almendra, ideales para un snack rápido.</p>
+            </td>
+            
+            <!-- Lista con los detalles del producto -->
+            <td>
+                <ul>
+                    <li>Precio: $15.00 MXN</li>
+                    <li>Cantidad: 150g</li>
+                    <li>Marca: <a href="https://www.marcaejemplo.com" target="_blank">Marca Ejemplo</a></li>
+                    <li>Información Nutrimental: Energía, grasas, carbohidratos, proteínas.</li>
+                </ul>
+            </td>
+            
+            <!-- Enlace a la página interna de información nutrimental -->
+            <td><a href="info_nutrimental/galletas.html">Ver Información Nutrimental</a></td>
+        </tr>
+        
+        <!-- Fila para el producto 2: Barra Energética -->
+        <tr>
+            <!-- Imagen del producto -->
+            <td><img src="imagenes/barra_energetica.jpg" alt="Barra Energética" width="200" height="200"></td>
+            
+            <!-- Descripción del producto -->
+            <td>
+                <p>Barra energética con frutos secos y chocolate oscuro, perfecta para reponer energías.</p>
+            </td>
+            
+            <!-- Lista con los detalles del producto -->
+            <td>
+                <ul>
+                    <li>Precio: $20.00 MXN</li>
+                    <li>Cantidad: 50g</li>
+                    <li>Marca: <a href="https://www.barraejemplo.com" target="_blank">Barra Ejemplo</a></li>
+                    <li>Información Nutrimental: Energía, grasas, carbohidratos, proteínas.</li>
+                </ul>
+            </td>
+            
+            <!-- Enlace a la página interna de información nutrimental -->
+            <td><a href="info_nutrimental/barra_energetica.html">Ver Información Nutrimental</a></td>
+        </tr>
+        
+        <!-- Fila para el producto 3: Jugo -->
+        <tr>
+            <!-- Imagen del producto -->
+            <td><img src="imagenes/jugo.png" alt="Jugo de Naranja" width="200", height="200"></td>
+            
+            <!-- Descripción del producto -->
+            <td>
+                <p>Jugo de naranja 100% natural, sin azúcares añadidos, rico en vitamina C.</p>
+            </td>
+            
+            <!-- Lista con los detalles del producto -->
+            <td>
+                <ul>
+                    <li>Precio: $12.00 MXN</li>
+                    <li>Cantidad: 250ml</li>
+                    <li>Marca: <a href="https://www.jugoejemplo.com" target="_blank">Jugo Ejemplo</a></li>
+                    <li>Información Nutrimental: Energía, azúcares, vitamina C.</li>
+                </ul>
+            </td>
+            
+            <!-- Enlace a la página interna de información nutrimental -->
+            <td><a href="info_nutrimental/jugo.html">Ver Información Nutrimental</a></td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
